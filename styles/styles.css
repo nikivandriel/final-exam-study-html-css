@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: #646464;
+    background-color: #f0f8f8;
+}
+
+h1, h2 {
+    color: #00669e;
+}
+a {
+    text-decoration: none;
+}
+nav ul {
+    list-style: none;
+}
+
+header {
+    display: inline-flex;
+    height: 100px;
+    margin-top: 2rem;
+}
+.logo {
+    background-image: url("../img/vink.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+#banner {
+    background-image: url("../img/birds.jpg");
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 250px;
+}
+
+.content-item {
+    background-color: rgba(192, 214, 111, 10);
+    padding: 1rem;
+    margin: 0.5rem;
+    border-radius: 4px;
+}
+
+@media only screen and (min-width: 768px) {
+
+    ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    #banner {
+        height: 300px;
+    }
+ 
+}
+
+@media only screen and (min-width:1024px) {
+    
+}
