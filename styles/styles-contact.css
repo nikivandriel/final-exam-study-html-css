@@ -1,0 +1,41 @@
+.container-contact {
+    padding: 1rem;
+}
+.container-contact > h1, p, form {
+    grid-column: span 2;
+}
+
+form {
+    padding-block-end: 2rem;
+}
+ul {
+    margin: auto;
+    padding: 1.5rem;
+    max-width: 600px;
+}
+
+li {
+    display: flex;
+    flex-direction: column;
+    margin-block-end: .5rem;
+}
+label {
+    padding-block-end: .25rem;
+}
+input {
+    border: 1px solid gray;
+    border-radius: 4px;
+}
+
+#vragen {
+    height: 10rem;
+}
+
+#verzenden {
+    position: absolute;
+    right: 2rem;
+    margin-block-start: .5rem;
+    background-color: blue;
+    color: cornsilk;
+    padding: .5rem;
+}

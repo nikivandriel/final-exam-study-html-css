@@ -1,46 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
-
-* {
-    margin: 0;
-    box-sizing: border-box;
-    border: none;
-    font-family: 'Roboto';
-}
-
-body {
-    color: #646464;
-    
-}
-
-.container {
-    background-color: #f0f8f8;
-}
-
-h1, h2 {
-    color: #00669e;
-    padding-block-end: .5rem;
-    font-family: 'Russo One', sans-serif;
-}
-a {
-    text-decoration: none;
-}
-nav ul {
-    list-style: none;
-}
-
-header {
-    display: inline-flex;
-    height: 100px;
-    margin-top: 2rem;
-}
-.logo {
-    background-image: url("../img/vink.jpg");
-    background-size: cover;
-    background-position: center;
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-}
 
 #banner {
     background-image: url("../img/birds.jpg");
@@ -76,11 +33,6 @@ figcaption {
     padding: .5rem 0;
 }
 
-footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
 @media only screen and (min-width: 768px) {
 
     ul {
@@ -128,11 +80,3 @@ footer {
         padding: .5rem 0;
     }
 }
-
-@media only screen and (min-width: 1440px) {
-    .container {
-        max-width: 1440px;
-        margin: 0 auto;
-        padding: 2rem;
-    }
-} 
