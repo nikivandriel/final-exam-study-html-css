@@ -63,6 +63,10 @@ img, .video-content {
     }
 }
 
+.container-contact > h1, p, form, img, .intro {
+    grid-column: span 2;
+}
+
 @media only screen and (min-width: 1024px) {
     
     #galery {
