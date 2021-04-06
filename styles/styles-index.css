@@ -35,11 +35,11 @@ figcaption {
 
 @media only screen and (min-width: 768px) {
 
-    ul {
+    /* ul {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-    }
+    } */
 
     #banner {
         height: 300px;

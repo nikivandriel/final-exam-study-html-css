@@ -12,11 +12,11 @@ img, .video-content {
 
     /* .logo {
         grid-column: span 1;
-    }
+    }*/
     
     nav {
-        grid-column: span 1;
-    } */
+        grid-column: span 2;
+    }
     header {
         grid-column: span 2;
     }

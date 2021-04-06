@@ -21,17 +21,44 @@ h1, h2 {
     padding-block-end: .5rem;
     font-family: 'Russo One', sans-serif;
 }
-a {
-    text-decoration: none;
-}
+
 ul {
     list-style: none;
+    padding: 0;
+}
+
+nav {
+    background-color: #00669e;
+    color: white;
+    height: 10vh;
+    width: 100%;
+}
+
+.nav-links {
+    display: flex;
+    width: 70%;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+    margin-inline-start: auto;
+    padding-inline-end: 2rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    padding: 2.5rem 1.5rem;
+}
+
+nav a:active,
+a:hover {
+    border-inline-start: 3px solid #3bbae2;
+    background: rgba(171,225,250,0.25);
 }
 
 header {
-    display: inline-flex;
-    height: 100px;
-    margin-top: 2rem;
+    /* display: inline-flex; */
+    /* margin-top: 2rem; */
 }
 .logo {
     background-image: url("../img/vink.jpg");
@@ -46,6 +73,44 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+@media only screen and (max-width: 768px) {
+
+    .line {
+        width: 30px;
+        height: 3px;
+        background-color: white;
+        margin: 5px;
+    }
+
+    .hamburger {
+        position: absolute;
+        cursor: pointer;
+        right: 5%;
+        top: 50%;
+        transform: translate(-5%, -50%);
+        z-index: 2;
+    }
+
+    nav {
+        position: relative;
+    }
+
+    .nav-links {
+        background-color: #00669e;
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        flex-direction: column;
+        clip-path: circle(100px at 90% -10%);
+        -webkit-clip-path: circle(100px at 90% -10%);
+        transition: all 1s ease-out;
+    }
+
+    .nav-links.open {
+        clip-path: circle(1000px at 90% -10%);
+        -webkit-clip-path: circle(1000px at 90% -10%);
+    }
 }
 
 @media only screen and (min-width: 1440px) {
