@@ -15,13 +15,13 @@
 form {
     padding-block-end: 2rem;
 }
-ul {
+form > ul {
     margin: auto;
     padding: 1.5rem;
     max-width: 600px;
 }
 
-li {
+form li {
     display: flex;
     flex-direction: column;
     margin-block-end: .5rem;
@@ -32,6 +32,7 @@ label {
 input {
     border: 1px solid gray;
     border-radius: 4px;
+    font-size: inherit;
 }
 
 #vragen {
@@ -39,10 +40,13 @@ input {
 }
 
 #verzenden {
-    /* position: absolute; */
     right: 2rem;
     margin-block-start: .5rem;
     background-color: #00669e;
     color: white;
     padding: .5rem;
+}
+
+#verzenden:hover {
+    cursor: pointer;
 }
