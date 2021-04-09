@@ -43,22 +43,42 @@ nav {
     margin-inline-start: auto;
     padding-inline-end: 2rem;
 }
+nav li {
+    padding: 15px;
+    width: 120px;
+    margin: 15px;
+    text-align: center;
+}
 
 nav a {
     text-decoration: none;
     color: white;
-    padding: 2.5rem 1.5rem;
 }
 
-nav a:active,
-a:hover {
-    border-inline-start: 3px solid #3bbae2;
+.active, nav li:hover {
+    border-radius: 4px;
     background: rgba(171,225,250,0.25);
+}
+
+.sub-menu {
+    display: none;
+    margin-top: 15px;
+    position: absolute;
+    background-color: #00669e;
+    margin-inline-start: -15px;
+}
+
+nav li:hover .sub-menu {
+    display: block;
+    background-color: none;
+
 }
 
 header {
     /* display: inline-flex; */
     /* margin-top: 2rem; */
+    top: 0;
+    position: sticky;
 }
 .logo {
     background-image: url("../img/vink.jpg");
@@ -103,13 +123,23 @@ footer {
         width: 100%;
         flex-direction: column;
         clip-path: circle(100px at 90% -10%);
-        -webkit-clip-path: circle(100px at 90% -10%);
+        -webkit-clip-path: circle(100px at 90% -15%);
         transition: all 1s ease-out;
     }
 
     .nav-links.open {
-        clip-path: circle(1000px at 90% -10%);
-        -webkit-clip-path: circle(1000px at 90% -10%);
+        clip-path: circle(1240px at 90% -10%);
+        -webkit-clip-path: circle(1240px at 90% -15%);
+    }
+
+    .sub-menu {
+        margin-block-start: -75px;
+        margin-inline-start: 105px;
+    }
+}
+@media only screen and (min-width: 768px) {
+    header {
+        position: relative;
     }
 }
 
