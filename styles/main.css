@@ -22,6 +22,11 @@ h1, h2 {
     font-family: 'Russo One', sans-serif;
 }
 
+#galery img, .video-content {
+    width: 100%;
+    height: auto;
+}
+
 ul {
     list-style: none;
     padding: 0;
@@ -30,7 +35,7 @@ ul {
 nav {
     background-color: #00669e;
     color: white;
-    height: 10vh;
+    height: 100px;
     width: 100%;
 }
 
@@ -41,7 +46,7 @@ nav {
     justify-content: space-around;
     align-items: center;
     margin-inline-start: auto;
-    padding-inline-end: 2rem;
+    padding-inline-end: 1rem;
 }
 nav li {
     padding: 15px;
@@ -75,6 +80,10 @@ nav li:hover .sub-menu {
 
 }
 
+.fa-chevron-down {
+    font-size: 16px;
+    padding-left: .5rem;
+}
 header {
     top: 0;
     position: sticky;
@@ -86,7 +95,7 @@ header {
     height: 75px;
     position: absolute;
     padding: 1rem;
-    top: 10%;
+    top: 12%;
     left: 3%;
     border-radius: 50%;
     font-weight: 700;
@@ -105,6 +114,7 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 1rem 0;
 }
 @media only screen and (max-width: 768px) {
 
@@ -130,7 +140,7 @@ footer {
 
     .nav-links {
         background-color: #00669e;
-        position: fixed;
+        /* position: fixed; */
         height: 100vh;
         width: 100%;
         flex-direction: column;
@@ -152,6 +162,17 @@ footer {
 @media only screen and (min-width: 768px) {
     header {
         position: relative;
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1035px) {
+    nav li {
+        margin: 0px;
+        width: 120px;
+    }
+
+    .nav-links {
+        width: fit-content;
     }
 }
 

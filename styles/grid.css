@@ -1,8 +1,3 @@
-img, .video-content {
-    width: 100%;
-    height: auto;
-}
-
 @media only screen and (min-width: 768px) {
     
     .container {
@@ -63,7 +58,7 @@ img, .video-content {
     }
 }
 
-.container-contact > h1, p, form, img, .intro {
+.container-contact {
     grid-column: span 2;
 }
 
