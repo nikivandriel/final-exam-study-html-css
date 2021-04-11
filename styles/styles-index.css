@@ -35,18 +35,11 @@ figcaption {
 
 @media only screen and (min-width: 768px) {
 
-    /* ul {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    } */
-
     #banner {
         height: 300px;
     }
 
     #galery > figure, iframe {
-        padding-block-end: .5rem;
         padding-inline-end: .5rem;
     }
     #galery > figure:nth-child(4), iframe:last-child {

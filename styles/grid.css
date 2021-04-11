@@ -4,10 +4,6 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
-
-    /* .logo {
-        grid-column: span 1;
-    }*/
     
     nav {
         grid-column: span 2;
@@ -34,11 +30,11 @@
         flex-wrap: wrap;
     }
     
-    figure {
+    #galery .figure {
        width: 33.33%;
     }
 
-    .video-content {
+    #galery .video-content {
         width: 50%;
     }
     
@@ -68,7 +64,7 @@
         display: inline-flex;
     }
 
-    figure, .video-content {
+    #galery figure, .video-content {
         width: 20%;
     }
 
