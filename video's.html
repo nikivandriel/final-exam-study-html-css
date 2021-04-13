@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="styles/main.css" />
+    <link rel="stylesheet" type="text/css" href="styles/grid.css" />
+    <link rel="stylesheet" type="text/css" href="styles/styles-video.css" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <header>
+        <nav>
+          <a href="index.html" class="logo"></a>
+          <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+          </div>
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="uitgelicht.html">Uitgelicht</a></li>
+            <li>
+              <a>Beelden</a>
+              <div class="sub-menu">
+                <ul>
+                  <li><a href="foto's.html">Foto's</a></li>
+                  <li class="active"><a href="video's.html">Video's</a></li>
+                </ul>
+              </div>
+            </li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main class="container-video">
+        <h1>Interessante video's</h1>
+        <section class="video">
+          <iframe
+            class="video-content"
+            src="https://www.youtube.com/embed/4lqk5Ka6uz4"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          >
+          </iframe>
+          <iframe 
+            class="video-content"
+            src="https://www.youtube.com/embed/eVeKoYpn7b0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>
+          </iframe>
+          <iframe 
+          class="video-content"
+            src="https://www.youtube.com/embed/l1Hutzkvvtw" 
+            title="YouTube video player"  
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>
+          </iframe>
+        </section>
+      </main>
+      <footer>
+        <p>Ontworpen en gebouwd door Niki van Driel</p>
+        <address>vandrielniki@gmail.com</address>
+      </footer>
+    </div>
+    <script src="main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+      WebFont.load({
+        google: {
+          families: ["Roboto:300,400,700"],
+        },
+      });
+    </script>
+  </body>
+</html>

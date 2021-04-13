@@ -1,5 +1,5 @@
 .container-contact > img {
-    /* max-width: 800px; */
+    width: 100%;
     margin: 1rem auto 0;
     display: block;
     max-inline-size: 800px;

@@ -25,7 +25,9 @@ h1, h2 {
     font-family: 'Russo One', sans-serif;
 }
 
-#galery img, .video-content {
+#galery img, 
+.video-content, 
+.content-item img{
     width: 100%;
     height: auto;
 }
@@ -90,6 +92,7 @@ nav li:hover .sub-menu {
 header {
     top: 0;
     position: sticky;
+    z-index: 2;
 }
 .logo {
     background-image: url("../img/vink.jpg");

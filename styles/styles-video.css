@@ -1,0 +1,14 @@
+.container-video {
+    margin: 1rem;
+}
+
+.container-video h1 {
+    text-align: center;
+}
+
+.video {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}

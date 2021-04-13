@@ -1,0 +1,33 @@
+.container-foto {
+    margin: 1rem;
+}
+
+.container-foto h1 {
+    text-align: center;
+}
+
+.afbeeldingen {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+img {
+    padding: 0 .5rem 1rem .5rem;
+    width: 100%;
+    height: auto;
+}
+
+img:last-child {
+    padding-block-end: 0;
+}
+
+@media only screen and (min-width: 768px) {
+    img {
+        max-width: 350px; 
+    }
+     img:last-child {
+        padding-block-end: 1rem;
+    }
+}
